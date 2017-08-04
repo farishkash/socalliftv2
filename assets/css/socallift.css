@@ -1,0 +1,304 @@
+html,
+body {
+    color: #F2F2F2;
+    background-color: #68829e;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    color: #F2F2F2;
+}
+
+.flex-container {
+    -js-display: flex;
+    display: flex;
+}
+
+
+/* header and nav section */
+
+.header {
+    z-index: 1;
+    position: fixed;
+    height: 4.25rem;
+    width: 100%;
+    opacity: 1.0 !important;
+    background-color: #68829e;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.nav_mobile {
+    display: none;
+}
+
+.nav_desktop {
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 1rem;
+}
+
+.nav_desktop span a {
+    color: white;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav_desktop span a:hover,
+a:focus {
+    color: #505160;
+}
+
+
+/* main content */
+
+.main {
+    padding-top: 4.25rem;
+    margin: 0 auto;
+}
+
+
+/* Jumbotron */
+
+.jumbotron-intro {
+    flex-direction: column;
+    justify-content: center;
+    height: 60rem;
+    background: url(../media/liftjumbo1080.jpg)no-repeat center center;
+    background-size: cover;
+}
+
+.content {
+    padding: 2.5rem 5rem;
+    text-shadow: 2px 2px #000;
+}
+
+.main-heading {
+    font-size: 4.25rem;
+}
+
+.sub-heading {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+
+/* Register Section */
+
+.register {
+    background: url('../media/comingsoon1080.jpg')no-repeat center center;
+    background-size: cover;
+    height: 60rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 4.25rem;
+}
+
+.coming-text {
+    margin-right: 3.25rem;
+}
+
+
+/* Contact and Last Conference */
+
+a.sub-heading {
+    text-decoration: none;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    color: #80deea;
+}
+
+.feature {
+    height: 100%;
+    padding-top: 4.25rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 10rem;
+}
+
+.bkgradient1 {
+    background: #505160;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #505160, #68829e);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #505160, #68829e);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #505160, #68829e);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #505160, #68829e);
+    /* Standard syntax (must be last) */
+}
+
+.bkgradient2 {
+    background: #68829e;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #68829e, #505160);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #68829e, #505160);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #68829e, #505160);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #68829e, #505160);
+    /* Standard syntax (must be last) */
+}
+
+.feature-info {
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    text-align: center;
+}
+
+.feature-info a.sub-heading {
+    font-size: 1.7rem;
+}
+
+.feature-info p.sub-heading {
+    font-size: 1.5rem;
+}
+
+.portrait-picture {
+    width: 55%;
+    text-align: center;
+}
+
+.portrait {
+    width: 100%
+}
+
+.feature-person {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Future About/Mission Section */
+
+
+/* large scale screen media query */
+
+@media only screen and (min-width: 1981px) {
+    /* Contact and Last Conference */
+    .portrait {
+        width: 75%;
+    }
+    .feature-info a.sub-heading {
+        font-size: 4.5rem;
+    }
+    .feature-info p.sub-heading {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* tablet media query */
+
+@media only screen and (max-width: 1024px) {
+    .flex-container {
+        -js-display: flex;
+        display: flex;
+    }
+    /* header and nav section */
+    .header {
+        flex-wrap: nowrap;
+    }
+    .nav_desktop span a {
+        color: white;
+        padding-right: 1.25rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    /* Contact and Last Conference */
+    .feature {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .feature-info {
+        width: 100%;
+        padding: 1rem;
+    }
+    .feature-info a.sub-heading {
+        font-size: 2.1rem;
+    }
+    .feature-info p.sub-heading {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .portrait-picture {
+        width: 100%;
+        text-align: center;
+    }
+    .portrait {
+        width: 80%;
+    }
+}
+
+
+/* phone media query */
+
+@media only screen and (max-width: 737px) {
+    /* header and nav section */
+    .logomobile {
+        height: 3.75rem;
+    }
+    .nav_desktop {
+        display: none;
+    }
+    .nav_mobile {
+        color: white;
+        padding-right: .20rem;
+        padding-left: .20rem;
+        -js-display: flex;
+        display: flex;
+        align-items: center;
+    }
+    .nav_mobile span {
+        padding-right: .40rem;
+    }
+    .iconheight {
+        width: 1.75rem;
+    }
+    .jumbotron-intro {
+        height: 45rem;
+        justify-content: flex-start;
+    }
+    .main-heading {
+        font-size: 2rem;
+    }
+    .sub-heading {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+}
+
+
+/* Register Section */
+
+.register {
+    height: 45rem;
+    justify-content: flex-start;
+}
+
+
+/* Anchor links scrolling fix */
+
+*[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -4.25rem;
+    height: 4.25rem;
+    visibility: hidden;
+}
