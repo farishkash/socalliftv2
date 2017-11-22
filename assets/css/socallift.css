@@ -64,6 +64,7 @@ a:focus {
 .main {
     padding-top: 4.25rem;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 
@@ -266,7 +267,7 @@ a.sub-heading {
         align-items: center;
     }
     .nav_mobile span {
-        padding-right: .40rem;
+        padding-right: 1.25rem;
     }
     .iconheight {
         width: 1.75rem;
